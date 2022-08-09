@@ -1,0 +1,48 @@
+/* // Update the CSS file to:
+
+//     make the piece div round, not square
+//     be different colors depending on whether it’s a player #1 or #2 piece
+
+// While not everything will work, you should now be able to click on a column and see a piece appear at the very bottom of that column. (They won’t yet appear in the right row and will always be player #1 pieces) */
+
+
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.one{
+  /* TODO: make into circles */
+  background-color: blue;
+
+}
+.two{
+  /* TODO: make into circles */
+  background-color: red;
+
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
